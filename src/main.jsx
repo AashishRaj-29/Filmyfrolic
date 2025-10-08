@@ -4,6 +4,7 @@ import Login from './Login.jsx'
 import Signup from './Signup.jsx'
 import Recovery from './Recovery.jsx'
 import { BrowserRouter,Routes,Route } from 'react-router-dom'
+import './tailwind.css';
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>

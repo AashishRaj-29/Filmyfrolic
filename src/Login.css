@@ -8,6 +8,12 @@ html, body {
 }
 
 
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  font-weight: inherit;
+}
+
+
  :root {
   --bg-dark: #0f1a22;
   --teal-core: #3a6c77;
@@ -16,7 +22,8 @@ html, body {
 }
 
 /* full screen background */
-.login-bg {
+
+/* .login-bg {
   position: relative;
   width: 100%;
   height: 100vh;
@@ -28,7 +35,7 @@ html, body {
   color: white;
 }
 
-/* glowing ellipse */
+
 .login-bg::before,
 .login-bg::after {
   content: "";
@@ -36,8 +43,8 @@ html, body {
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%) rotate(25deg);
-  width: 130vmin;   /* made much larger */
-  height: 75vmin;   /* taller ellipse */
+  width: 130vmin;   
+  height: 75vmin;  
   border-radius: 50%;
   pointer-events: none;
   filter: blur(40px);
@@ -45,7 +52,8 @@ html, body {
   will-change: transform, opacity;
 }
 
-/* outer halo */
+
+
 .login-bg::before {
   background: radial-gradient(
     closest-side,
@@ -58,7 +66,8 @@ html, body {
   transform: translate(-55%, -45%) rotate(25deg) scale(1.4);
 }
 
-/* inner core */
+
+
 .login-bg::after {
   background: radial-gradient(
     ellipse at center,
@@ -70,9 +79,11 @@ html, body {
   opacity: 1;
   filter: blur(32px) saturate(120%);
   transform: translate(-50%, -45%) rotate(25deg) scale(1.2);
-}
+} */
 
 /* vignette edges */
+
+
 .vignette {
   position: absolute;
   inset: 0;
@@ -87,12 +98,14 @@ html, body {
 }
 
 /* login box */
+
+
 .login-box {
   position: relative;
   z-index: 2;
   background: rgba(15, 26, 34, 0.85);
   padding: 2rem;
-  /* padding: 1rem; */
+ 
   border-radius: 1rem;
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.6);
   width: 20%;
@@ -101,17 +114,17 @@ html, body {
   padding-top: .2rem;
   display: flex;
   flex-direction: column;
-}
+} 
 
-.login-box h2 {
+ .login-box h2 {
   margin-bottom: 2rem;
-  font-weight: 600;
+  font-weight: 65500;
 }
 
 input {
   width: 92%;
   padding: 0.75rem;
-  /* margin: 0.5rem 0; */
+  
   border: none;
   border-radius: 0.5rem;
   outline: none;
@@ -134,7 +147,7 @@ input {
   border: none;
   border-radius: 0.5rem;
   align-items: center;
-  /* background: var(--teal-core); */
+   background: var(--teal-core); 
   color: white;
   background-color: var(--orange) ;
   font-size: 1rem;
@@ -150,11 +163,11 @@ input {
 
 .login-box a:hover{ 
   color: #e1c100;
-}
+} 
 
-.title{
+ .title{
   position: absolute;
-  top: 5vh;             /* fixed distance from top */
+  top: 5vh;             
   width: 100%;
   text-align: center;
   color: var(--orange);
@@ -166,7 +179,7 @@ input {
 .title h1,.title h3{
   margin: 0;
   padding: 0;
-}
+} 
 
 .login-box h5{
   text-align: left;
@@ -233,7 +246,6 @@ input {
 
 .input-container .user-icon {
   margin-left: 10px;
-  /* pointer-events: none; */
   color: rgba(15, 26, 34, 0.85);
 }
 
@@ -258,13 +270,11 @@ input {
 
 .password-container .password-icon {
   margin-left: 10px;
-  /* pointer-events: none; */
   color: rgba(15, 26, 34, 0.85);
 }
 
 .password-container .password-icon:hover,.input-container .user-icon:hover {
   cursor: pointer;
-  /* color: var(--teal-mid); */
 }
 
 .signup-box{
@@ -272,7 +282,6 @@ input {
   z-index: 2;
   background: rgba(15, 26, 34, 0.85);
   padding: 2rem;
-  /* padding: 1rem; */
   border-radius: 1rem;
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.6);
   width: 20%;
@@ -297,7 +306,6 @@ input {
   border: none;
   border-radius: 0.5rem;
   align-items: center;
-  /* background: var(--teal-core); */
   color: white;
   background-color: var(--orange) ;
   font-size: 1rem;
@@ -309,7 +317,6 @@ input {
 .signup-box h5 {
     text-align: left;
     font-weight: 500;
-    /* color: var(--orange); */
     font-size: 0.9rem;
     margin: 1rem 0 0.3rem 0;
 }
@@ -320,7 +327,7 @@ input {
 }
 
 .signup-box h2 {
-  margin: 1rem 0 1rem 0; /* top, right, bottom, left */
+  margin: 1rem 0 1rem 0; 
   font-weight: 600;
   text-align: center;
 }
